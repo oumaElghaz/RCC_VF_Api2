@@ -18,7 +18,7 @@ public interface sss_cdr_api1_repository extends JpaRepository<sss_cdr_api1, Lon
     int getMaxId_lot();
 
     @Query("SELECT DISTINCT c FROM sss_cdr_api1 c " +
-            "WHERE c.codMsg = \"0\" " )
+            "WHERE c.codMsg = \"ACCEPTÉE\" " )
     List<sss_cdr_api1> findByStatusEnAccepte();
 
 
