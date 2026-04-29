@@ -25,7 +25,7 @@ public class ApiService {
 
     public MyResponseBody sendDataToApi(MyRequestBody body) {
         String url = "https://cdr-int-extranet.bankalmaghrib.ma/ma.cdr.extranet.api/Report/DemandeCompteRenduRCC";
-        int lot_id=sss_cdr_api1_repository.getMaxId_lot();
+        Integer lot_id=sss_cdr_api1_repository.getMaxId_lot();
         LocalDateTime dateDeclaration= sss_cdr_api1_repository.getDateExtractionByMaxId_lot();
         return webClient.post()
                 .uri(url)

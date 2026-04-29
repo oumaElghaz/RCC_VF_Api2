@@ -2,13 +2,13 @@ package ma.vivalis.BKAM_CDR_API1.API.model;
 
 public class MyResponseBody {
     private String attribut;
-    private int id_Lot;
+    private Integer id_Lot;
     private String codMsg;
     private String msg;
     private int statut;
     private String fichier;
 
-    public MyResponseBody(String attribut, int id_Lot, String codMsg, String msg, int statut, String fichier) {
+    public MyResponseBody(String attribut, Integer id_Lot, String codMsg, String msg, int statut, String fichier) {
         this.attribut = attribut;
         this.id_Lot = id_Lot;
         this.codMsg = codMsg;
@@ -21,7 +21,7 @@ public class MyResponseBody {
         return attribut;
     }
 
-    public int getId_Lot() {
+    public Integer getId_Lot() {
         return id_Lot;
     }
 
@@ -45,7 +45,7 @@ public class MyResponseBody {
         this.attribut = attribut;
     }
 
-    public void setId_Lot(int id_Lot) {
+    public void setId_Lot(Integer id_Lot) {
         this.id_Lot = id_Lot;
     }
 

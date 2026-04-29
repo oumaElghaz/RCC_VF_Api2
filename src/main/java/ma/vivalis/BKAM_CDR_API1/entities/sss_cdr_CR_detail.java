@@ -17,7 +17,7 @@ public class sss_cdr_CR_detail {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private int id_lot;
+    private Integer id_lot;
     private LocalDateTime dateExt;
     private String numDec;
     private String num_ligne;

@@ -15,7 +15,7 @@ public interface sss_cdr_api1_repository extends JpaRepository<sss_cdr_api1, Lon
     LocalDateTime getDateExtractionByMaxId_lot();
 
     @Query("SELECT MAX(c2.id_Lot) FROM sss_cdr_api1 c2" )
-    int getMaxId_lot();
+    Integer getMaxId_lot();
 
     @Query("SELECT DISTINCT c FROM sss_cdr_api1 c " +
             "WHERE c.codMsg = \"ACCEPTÉE\" " )
@@ -24,6 +24,6 @@ public interface sss_cdr_api1_repository extends JpaRepository<sss_cdr_api1, Lon
 
     @Query("SELECT DISTINCT c.dateExtraction FROM sss_cdr_api1 c " +
             "WHERE c.id_Lot =:idLot" )
-    LocalDateTime findDateExtractionByIdLot(int idLot);
+    LocalDateTime findDateExtractionByIdLot(Integer idLot);
 
 }
